@@ -1,0 +1,20 @@
+Challenges in Creating Sitemap:
+
+
+Organizing all pages in a logical structure.
+Making navigation simple and easy to understand.
+
+Solution:
+
+Grouped related pages together and arranged them in a clear hierarchy from Home to other pages.
+Challenges in Creating Wireframe Deciding the placement of menus, buttons, and content. Keeping the design clean and user-friendly.
+
+Challenges in Creating Wireframe:
+
+Deciding the placement of menus, buttons, and content.
+Keeping the design clean and user-friendly.
+
+Solution:
+
+Created a simple layout with proper spacing and placed important sections where users can access them easily.
+
