@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login - Student Hub Portal</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial,sans-serif;
+        }
+
+        body{
+            background:white;
+        }
+
+        header{
+            background:#003366;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        nav{
+            background:#0055a5;
+            text-align:center;
+            padding:15px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:12px;
+            font-size:18px;
+            font-weight:bold;
+        }
+
+        nav a:hover{
+            color:yellow;
+        }
+
+        /* Login Section */
+
+        .login-section{
+
+            background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ538KkHld8LvOGitPu43s20UGfAI98mkiDJnY8HyUERw&s=10");
+            background-size:cover;
+            background-position:center;
+            background-repeat:no-repeat;
+
+            min-height:600px;
+
+            padding-top:40px;
+            padding-bottom:40px;
+        }
+
+        h2{
+            text-align:center;
+            color:black;
+            margin-bottom:30px;
+        }
+
+        form{
+            width:350px;
+            margin:auto;
+        }
+
+        label{
+            font-size:18px;
+            color:black;
+            font-weight:bold;
+        }
+
+        input{
+            width:100%;
+            padding:10px;
+            margin-top:5px;
+            margin-bottom:18px;
+            font-size:16px;
+        }
+
+        button{
+            width:100%;
+            padding:12px;
+            background:#003366;
+            color:white;
+            border:none;
+            font-size:18px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#0055a5;
+        }
+
+        footer{
+            background:#003366;
+            color:white;
+            text-align:center;
+            padding:15px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Student Hub Portal</h1>
+    <p>Your One-Stop Learning Platform</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="login.html">Login</a>
+    <a href="hack.html">Hackathons</a>
+    <a href="study.html">Study Materials</a>
+    <a href="coding.html">Coding Practice</a>
+    <a href="events.html">Events</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+     <a href="contact.html">FAQ</a>
+</nav>
+
+<section class="login-section">
+
+    
+
+    <form action="sucess.html">
+
+        <label>Student ID</label><br>
+        <input type="text" placeholder="Enter Student ID" required><br>
+
+        <label>Student Name</label><br>
+        <input type="text" placeholder="Enter Your Name" required><br>
+
+        <label>Department</label><br>
+        <input type="text" placeholder="Enter Department" required><br>
+
+        <label>Email ID</label><br>
+        <input type="email" placeholder="Enter Email ID" required><br>
+
+        <button type="submit" >Login</button>
+
+    </form>
+
+</section>
+
+<footer>
+    <p>&copy; 2026 Student Hub Portal | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
