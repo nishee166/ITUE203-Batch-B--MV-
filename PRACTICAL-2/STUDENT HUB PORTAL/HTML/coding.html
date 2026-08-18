@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Coding Practice - Student Hub Portal</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ538KkHld8LvOGitPu43s20UGfAI98mkiDJnY8HyUERw&s=10");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+    
+}
+
+header{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+nav{
+    background:#0055a5;
+    text-align:center;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:12px;
+    font-size:17px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+.content{
+
+    background-image:url("");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    min-height:700px;
+    padding:40px;
+}
+
+.box{
+
+    background:black;
+    color:cyan;
+    padding:25px;
+    border-radius:10px;
+
+}
+
+h2{
+
+    text-align:center;
+    text-decoration:underline;
+    margin-bottom:25px;
+    color:cyan;
+
+}
+
+h3{
+
+    margin-top:30px;
+    margin-bottom:15px;
+    text-decoration:underline;
+    color:cyan;
+
+}
+
+p{
+
+    font-size:17px;
+    line-height:1.8;
+    color:cyan;
+
+}
+
+table{
+
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+    margin-bottom:20px;
+
+}
+
+table,th,td{
+
+    border:1px solid #003366;
+
+}
+
+th{
+
+    background:#003366;
+    color:white;
+    padding:10px;
+
+}
+
+td{
+
+    text-align:center;
+    padding:10px;
+    color:cyan;
+
+}
+
+ul{
+
+    margin-left:25px;
+    line-height:2;
+    color:white;
+    font-size:17px;
+
+}
+
+footer{
+
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:15px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Student Hub Portal</h1>
+
+<p>Your One-Stop Learning Platform</p>
+
+</header>
+
+<nav>
+
+<a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="login.html">Login</a>
+    <a href="hack.html">Hackathons</a>
+    <a href="study.html">Study Materials</a>
+    <a href="coding.html">Coding Practice</a>
+    <a href="events.html">Events</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+     <a href="contact.html">FAQ</a>
+
+</nav>
+
+<section class="content">
+
+<div class="box">
+
+<h2>Coding Practice</h2>
+
+<p style="color: white;">
+
+Welcome to the Coding Practice section of the Student Hub Portal.
+This page helps students improve their programming skills by practicing
+coding problems, learning algorithms and solving real-world challenges.
+Regular coding practice improves logical thinking, problem-solving skills
+and confidence for placements, internships and hackathons.
+
+</p>
+
+<h3>Programming Languages</h3>
+
+<table>
+
+<tr>
+
+<th>Language</th>
+<th>Topics</th>
+<th>Practice Platform</th>
+<th>Difficulty</th>
+
+</tr>
+
+<tr>
+
+<td>C</td>
+<td>Variables, Loops, Arrays, Functions</td>
+<td>HackerRank</td>
+<td>Beginner</td>
+
+</tr>
+
+<tr>
+
+<td>C++</td>
+<td>OOP, STL, Sorting, Searching</td>
+<td>LeetCode</td>
+<td>Intermediate</td>
+
+</tr>
+
+<tr>
+
+<td>Java</td>
+<td>Classes, Objects, Collections</td>
+<td>HackerRank</td>
+<td>Intermediate</td>
+
+</tr>
+
+<tr>
+
+<td>Python</td>
+<td>Lists, Tuples, Dictionaries</td>
+<td>HackerRank</td>
+<td>Beginner</td>
+
+</tr>
+
+<tr>
+
+<td>JavaScript</td>
+<td>DOM, Events, Functions</td>
+<td>freeCodeCamp</td>
+<td>Intermediate</td>
+
+</tr>
+
+</table>
+
+<h3>Data Structures & Algorithms</h3>
+
+<table>
+
+<tr>
+
+<th>Topic</th>
+<th>Level</th>
+<th>Practice Website</th>
+
+</tr>
+
+<tr>
+
+<td>Arrays</td>
+<td>Easy</td>
+<td>LeetCode</td>
+
+</tr>
+
+<tr>
+
+<td>Strings</td>
+<td>Easy</td>
+<td>HackerRank</td>
+
+</tr>
+
+<tr>
+
+<td>Linked List</td>
+<td>Medium</td>
+<td>GeeksforGeeks</td>
+
+</tr>
+
+<tr>
+
+<td>Stack</td>
+<td>Medium</td>
+<td>LeetCode</td>
+
+</tr>
+
+<tr>
+
+<td>Queue</td>
+<td>Medium</td>
+<td>HackerRank</td>
+
+</tr>
+<tr>
+
+<td>Trees</td>
+<td>Hard</td>
+<td>GeeksforGeeks</td>
+
+</tr>
+
+<tr>
+
+<td>Graphs</td>
+<td>Hard</td>
+<td>LeetCode</td>
+
+</tr>
+
+<tr>
+
+<td>Dynamic Programming</td>
+<td>Hard</td>
+<td>LeetCode</td>
+
+</tr>
+
+</table>
+
+<h3>Web Development Practice</h3>
+
+<table>
+
+<tr>
+
+<th>Technology</th>
+<th>Practice Topics</th>
+<th>Website</th>
+
+</tr>
+
+<tr>
+
+<td>HTML</td>
+<td>Forms, Tables, Lists</td>
+<td>freeCodeCamp</td>
+
+</tr>
+
+<tr>
+
+<td>CSS</td>
+<td>Flexbox, Grid, Responsive Design</td>
+<td>MDN Web Docs</td>
+
+</tr>
+
+<tr>
+
+<td>JavaScript</td>
+<td>DOM Manipulation, Events</td>
+<td>JavaScript.info</td>
+
+</tr>
+
+<tr>
+
+<td>Bootstrap</td>
+<td>Responsive Layouts</td>
+<td>Bootstrap Documentation</td>
+
+</tr>
+
+<tr>
+
+<td>React</td>
+<td>Components, Hooks</td>
+<td>React.dev</td>
+
+</tr>
+
+</table>
+
+<h3>Coding Challenge Websites</h3>
+
+<table>
+
+<tr>
+
+<th>Platform</th>
+<th>Purpose</th>
+
+</tr>
+
+<tr>
+
+<td>LeetCode</td>
+<td>Coding Interview Preparation</td>
+
+</tr>
+
+<tr>
+
+<td>HackerRank</td>
+<td>Programming Practice</td>
+
+</tr>
+
+<tr>
+
+<td>CodeChef</td>
+<td>Competitive Programming</td>
+
+</tr>
+
+<tr>
+
+<td>Codeforces</td>
+<td>Coding Contests</td>
+
+</tr>
+
+<tr>
+
+<td>GeeksforGeeks</td>
+<td>DSA & Interview Questions</td>
+
+</tr>
+
+<tr>
+
+<td>Coding Ninjas Studio</td>
+<td>Coding Problems</td>
+
+</tr>
+
+<tr>
+
+<td>Exercism</td>
+<td>Programming Exercises</td>
+
+</tr>
+
+</table>
+
+<h3>Daily Coding Challenges</h3>
+
+<table>
+
+<tr>
+
+<th>Challenge</th>
+<th>Difficulty</th>
+
+</tr>
+
+<tr>
+
+<td>Reverse a String</td>
+<td>Easy</td>
+
+</tr>
+
+<tr>
+
+<td>Palindrome Number</td>
+<td>Easy</td>
+
+</tr>
+
+<tr>
+
+<td>Fibonacci Series</td>
+<td>Easy</td>
+
+</tr>
+
+<tr>
+
+<td>Binary Search</td>
+<td>Medium</td>
+
+</tr>
+
+<tr>
+
+<td>Bubble Sort</td>
+<td>Medium</td>
+
+</tr>
+
+<tr>
+
+<td>Selection Sort</td>
+<td>Medium</td>
+
+</tr>
+
+<tr>
+
+<td>Stack using Array</td>
+<td>Medium</td>
+
+</tr>
+
+<tr>
+
+<td>Queue using Linked List</td>
+<td>Medium</td>
+
+</tr>
+
+<tr>
+
+<td>BFS Traversal</td>
+<td>Hard</td>
+
+</tr>
+
+<tr>
+
+<td>Dijkstra Algorithm</td>
+<td>Hard</td>
+
+</tr>
+
+</table>
+
+<h3>Interview Preparation Topics</h3>
+
+<ul>
+
+<li>Object-Oriented Programming (OOP)</li>
+
+<li>Data Structures</li>
+
+<li>Algorithms</li>
+
+<li>Database Management System (DBMS)</li>
+
+<li>Operating System</li>
+
+<li>Computer Networks</li>
+
+<li>SQL Queries</li>
+
+<li>Aptitude Questions</li>
+
+<li>HR Interview Questions</li>
+
+<li>System Design Basics</li>
+
+</ul>
+
+<h3>Mini Project Ideas</h3>
+
+<ul>
+
+<li>Student Management System</li>
+
+<li>Library Management System</li>
+
+<li>Calculator</li>
+
+<li>Quiz Application</li>
+
+<li>Weather App</li>
+
+<li>To-Do List</li>
+
+<li>Online Voting System</li>
+
+<li>Expense Tracker</li>
+
+<li>Portfolio Website</li>
+
+<li>Student Hub Portal</li>
+
+</ul>
+
+<h3>Benefits of Coding Practice</h3>
+
+<ul>
+
+<li>Improve logical thinking.</li>
+
+<li>Develop problem-solving skills.</li>
+
+<li>Learn different programming languages.</li>
+
+<li>Prepare for coding interviews.</li>
+
+<li>Perform well in hackathons.</li>
+
+<li>Build confidence in coding.</li>
+
+<li>Create real-world projects.</li>
+
+</ul>
+
+<h3>Coding Tips</h3>
+
+<ul>
+
+<li>Practice coding every day.</li>
+
+<li>Start with easy problems.</li>
+
+<li>Understand the logic before writing code.</li>
+
+<li>Debug your programs carefully.</li>
+
+<li>Learn from your mistakes.</li>
+
+<li>Participate in coding contests.</li>
+
+<li>Build small projects regularly.</li>
+
+<li>Read other programmers' solutions.</li>
+
+<li>Revise important concepts weekly.</li>
+
+<li>Keep learning new technologies.</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>&copy; 2026 Student Hub Portal | All Rights Reserved</p>
+
+</footer>
+
+</body>
+</html>
