@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Live Data - Student Hub Portal</title>
+
+    <link rel="stylesheet" href="PRACTICAL6.css">
+</head>
+
+<body>
+
+<header>
+    <a href="LOGIN.html" class="logout-btn">Log out</a>
+
+    <h1>Student Hub Portal</h1>
+    <p>Your One-Stop Learning Platform</p>
+</header>
+
+<nav>
+    <a href="INDEX.html">Home</a>
+    <a href="ABOUT.html">About</a>
+    <a href="HACKATHON.html">Hackathons</a>
+    <a href="STUDY.html">Study Materials</a>
+    <a href="CODING.html">Coding Practice</a>
+    <a href="EVENTS.html">Events</a>
+    <a href="PORTFOLIO.html">Portfolio</a>
+    <a href="CONTACT.html">Contact</a>
+    <a href="FAQ.html">FAQ</a>
+    <a href="PRACTICAL6.html">Live Data</a>
+</nav>
+
+<section class="content">
+
+    <div class="box">
+
+        <h2>Live Data</h2>
+
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="eventsTab">Events</button>
+            <button class="tab-btn" data-tab="studentsTab">Students</button>
+        </div>
+
+
+        <!-- EVENTS -->
+
+        <div id="eventsTab" class="tab-panel active">
+
+            <div class="toolbar">
+
+                <input
+                    type="text"
+                    id="eventSearch"
+                    class="search-input"
+                    placeholder="Search events by title, organizer or venue..."
+                >
+
+                <select id="eventCategoryFilter" class="filter-select">
+                    <option value="All">All Categories</option>
+                    <option value="Technical">Technical</option>
+                    <option value="Cultural">Cultural</option>
+                    <option value="Sports">Sports</option>
+                </select>
+
+                <select id="eventSort" class="filter-select">
+                    <option value="date-asc">Date: Earliest first</option>
+                    <option value="date-desc">Date: Latest first</option>
+                    <option value="title-asc">Title: A-Z</option>
+                </select>
+
+            </div>
+
+            <p class="result-count" id="eventsCount"></p>
+
+            <div class="data-grid" id="eventsList"></div>
+
+            <div class="pagination" id="eventsPagination"></div>
+
+        </div>
+
+
+        <!-- STUDENTS -->
+
+        <div id="studentsTab" class="tab-panel">
+
+            <div class="toolbar">
+
+                <input
+                    type="text"
+                    id="studentSearch"
+                    class="search-input"
+                    placeholder="Search students by name, enrollment or skill..."
+                >
+
+                <select id="studentDeptFilter" class="filter-select">
+                    <option value="All">All Departments</option>
+                    <option value="Computer Engineering">Computer Engineering</option>
+                    <option value="Information Technology">Information Technology</option>
+                    <option value="Computer Science">Computer Science</option>
+                </select>
+
+                <select id="studentSort" class="filter-select">
+                    <option value="name-asc">Name: A-Z</option>
+                    <option value="cgpa-desc">CGPA: High to Low</option>
+                    <option value="year-asc">Year: 1 to 4</option>
+                </select>
+
+            </div>
+
+
+            <div class="location-box">
+
+                <h4>Filter by Location (dependent dropdown)</h4>
+
+                <div class="toolbar">
+
+                    <select id="countrySelect" class="filter-select">
+                        <option value="">Select Country</option>
+                    </select>
+
+                    <select id="stateSelect" class="filter-select" disabled>
+                        <option value="">Select State</option>
+                    </select>
+
+                    <select id="citySelect" class="filter-select" disabled>
+                        <option value="">Select City</option>
+                    </select>
+
+                </div>
+
+            </div>
+
+            <p class="result-count" id="studentsCount"></p>
+
+            <div class="data-grid" id="studentsList"></div>
+
+            <div class="pagination" id="studentsPagination"></div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>&copy; 2026 Student Hub Portal | All Rights Reserved</p>
+</footer>
+
+<script type="module" src="js/app.js"></script>
+
+</body>
+</html>
