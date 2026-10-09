@@ -1,0 +1,19 @@
+[
+  { "id": 1, "category": "Registration", "question": "How can I register on Student Hub Portal?", "answer": "Open the Login page, enter your Student ID, Name, Department and Email, then click the Login button." },
+  { "id": 2, "category": "Registration", "question": "Is registration free?", "answer": "Yes, registration is completely free for students." },
+  { "id": 3, "category": "Registration", "question": "Can I update my information later?", "answer": "Yes, you can update your information whenever required." },
+  { "id": 4, "category": "Registration", "question": "What should I do if I enter incorrect details?", "answer": "Simply edit your details and submit them again." },
+  { "id": 5, "category": "Registration", "question": "Do I need a college email ID?", "answer": "No, any valid email address can be used." },
+  { "id": 6, "category": "Course", "question": "What study materials are available on the portal?", "answer": "The portal provides books, notes, online courses and YouTube channel recommendations for different subjects." },
+  { "id": 7, "category": "Course", "question": "Can I download study materials?", "answer": "Yes, if download links are available on the portal." },
+  { "id": 8, "category": "Course", "question": "Which programming languages are covered?", "answer": "C, C++, Java, Python, HTML, CSS, JavaScript and SQL." },
+  { "id": 9, "category": "Course", "question": "Does the portal provide coding practice?", "answer": "Yes, students can access coding practice resources and programming topics." },
+  { "id": 10, "category": "Course", "question": "Are hackathon and event details available?", "answer": "Yes, students can view technical events, campus events and sports events with complete details." },
+  { "id": 11, "category": "Portal", "question": "What is Student Hub Portal?", "answer": "Student Hub Portal is an educational platform that provides study resources, coding practice, event information and student portfolios." },
+  { "id": 12, "category": "Portal", "question": "Who can use this portal?", "answer": "All students can use the portal for learning and academic activities." },
+  { "id": 13, "category": "Portal", "question": "Is the portal available 24x7?", "answer": "Yes, students can access the portal anytime." },
+  { "id": 14, "category": "Portal", "question": "Can I participate in hackathons through this portal?", "answer": "Yes, the Hackathons page provides information about upcoming competitions and registration details." },
+  { "id": 15, "category": "Portal", "question": "How can I contact the Student Hub team?", "answer": "Visit the Contact page and use the contact form or the provided email and phone number." },
+  { "id": 16, "category": "Technical", "question": "Why is a page not loading properly?", "answer": "Please refresh the page or clear your browser cache, then try again." },
+  { "id": 17, "category": "Technical", "question": "Does the portal work offline?", "answer": "The Live Data page caches the last loaded data in your browser so recently viewed lists can still be shown offline." }
+]
