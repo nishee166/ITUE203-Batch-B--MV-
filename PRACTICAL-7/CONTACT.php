@@ -1,0 +1,262 @@
+<?php
+require_once __DIR__ . '/includes/helpers.php';
+
+$errors = [];
+$old = ['name' => '', 'email' => '', 'subject' => '', 'message' => ''];
+$flash = flash_get();
+
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+   
+    if (!csrf_verify($_POST['csrf_token'] ?? null)) {
+        http_response_code(403);
+        $errors[] = 'Security check failed (invalid or expired form token). Please reload the page and try again.';
+    } else {
+
+        /* ---- 3. Sanitize ---- */
+        $old['name']    = clean_text($_POST['name'] ?? '');
+        $old['email']   = clean_text($_POST['email'] ?? '');
+        $old['subject'] = clean_text($_POST['subject'] ?? '');
+        $old['message'] = clean_text($_POST['message'] ?? '', true);
+
+        /* ---- 4. Validate (server side) ---- */
+        if ($old['name'] === '') {
+            $errors[] = 'Full Name is required.';
+        } elseif (mb_strlen($old['name']) < 2 || mb_strlen($old['name']) > 60) {
+            $errors[] = 'Full Name must be between 2 and 60 characters.';
+        } elseif (!preg_match("/^[\p{L} .'-]+$/u", $old['name'])) {
+            $errors[] = 'Full Name may contain only letters, spaces, dots, apostrophes and hyphens.';
+        }
+
+        if ($old['email'] === '') {
+            $errors[] = 'Email Address is required.';
+        } elseif (mb_strlen($old['email']) > 100 || !filter_var($old['email'], FILTER_VALIDATE_EMAIL)) {
+            $errors[] = 'Please enter a valid email address.';
+        }
+
+        if ($old['subject'] === '') {
+            $errors[] = 'Subject is required.';
+        } elseif (mb_strlen($old['subject']) < 3 || mb_strlen($old['subject']) > 100) {
+            $errors[] = 'Subject must be between 3 and 100 characters.';
+        }
+
+        if ($old['message'] === '') {
+            $errors[] = 'Message is required.';
+        } elseif (mb_strlen($old['message']) < 10 || mb_strlen($old['message']) > 1000) {
+            $errors[] = 'Message must be between 10 and 1000 characters.';
+        }
+
+        
+        if (empty($errors)) {
+            $record = [
+                'name'         => $old['name'],
+                'email'        => $old['email'],
+                'subject'      => $old['subject'],
+                'message'      => $old['message'],
+                'submitted_at' => date('Y-m-d H:i:s')
+            ];
+
+            $columns = [
+                'name'         => 'Name',
+                'email'        => 'Email',
+                'subject'      => 'Subject',
+                'message'      => 'Message',
+                'submitted_at' => 'Submitted At'
+            ];
+
+            $saveError = save_record('contacts', $record, $columns);
+
+            if ($saveError === null) {
+                csrf_rotate();
+                flash_set('success', 'Message submitted successfully! Your message has been saved in contacts.csv and contacts.json.');
+                header('Location: CONTACT.php#send-message');   // Post/Redirect/Get
+                exit;
+            }
+
+            $errors[] = $saveError;
+        }
+    }
+}
+?>
+<!DOCTYPE html> 
+<html lang="en">
+     <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Contact - Student Hub Portal</title> <link rel="stylesheet" href="CONTACT.css">
+        <link rel="stylesheet" href="php-forms.css">
+     </head> 
+     <body>
+         <header>
+             <a href="LOGIN.html" class="logout-btn">Log out</a>
+              <h1>Student Hub Portal</h1> 
+              <p>Your One-Stop Learning Platform</p> 
+            </header> <nav> <a href="INDEX.html">Home</a> <a href="ABOUT.html">About</a> <a href="HACKATHON.html">Hackathons</a> <a href="STUDY.html">Study Materials</a> <a href="CODING.html">Coding Practice</a> <a href="EVENTS.html">Events</a> <a href="PORTFOLIO.html">Portfolio</a> <a href="CONTACT.html">Contact</a> <a href="FAQ.html">FAQ</a> <a href="PRACTICAL6.html">Live Data</a> </nav> <section class="content">
+<div class="box">
+
+    <div class="contact-title">
+        <div class="contact-icon">📩</div>
+        <h2>Contact Us</h2>
+        <p>We are here to help you with your academic and technical journey.</p>
+    </div>
+
+    <div class="intro">
+        <p>
+            Welcome to the Contact section of the Student Hub Portal.
+            If you have any questions, suggestions, feedback or technical
+            issues, feel free to contact us.
+        </p>
+
+        <p>
+            Our Student Hub Portal is designed to provide students with
+            study materials, coding practice, events, hackathons and
+            useful academic resources in one place.
+        </p>
+    </div>
+
+    <h3>Contact Information</h3>
+
+    <div class="contact-container">
+
+        <div class="contact-card">
+            <span>📧</span>
+            <h4>Email</h4>
+            <p>studenthub@gmail.com</p>
+        </div>
+
+        <div class="contact-card">
+            <span>📞</span>
+            <h4>Phone</h4>
+            <p>+91 98765 43210</p>
+        </div>
+
+        <div class="contact-card">
+            <span>📍</span>
+            <h4>Location</h4>
+            <p>CHARUSAT, Changa, Gujarat</p>
+        </div>
+
+        <div class="contact-card">
+            <span>🕐</span>
+            <h4>Working Hours</h4>
+            <p>Monday - Friday<br>9:00 AM - 5:00 PM</p>
+        </div>
+
+    </div>
+
+    <h3>Student Support</h3>
+
+    <table>
+
+        <tr>
+            <th>Support Area</th>
+            <th>Contact</th>
+            <th>Availability</th>
+        </tr>
+
+        <tr>
+            <td>Academic Support</td>
+            <td>studenthub@gmail.com</td>
+            <td>Monday - Friday</td>
+        </tr>
+
+        <tr>
+            <td>Technical Support</td>
+            <td>studenthub@gmail.com</td>
+            <td>Monday - Friday</td>
+        </tr>
+
+        <tr>
+            <td>Hackathon Queries</td>
+            <td>studenthub@gmail.com</td>
+            <td>Monday - Saturday</td>
+        </tr>
+
+        <tr>
+            <td>Event Queries</td>
+            <td>studenthub@gmail.com</td>
+            <td>Monday - Friday</td>
+        </tr>
+
+    </table>
+
+    <h3 id="send-message">Send Us a Message</h3>
+
+    <?php if ($flash): ?>
+        <div class="alert <?= $flash['type'] === 'success' ? 'alert-success' : 'alert-error' ?>" role="status">
+            <p><?= e($flash['message']) ?></p>
+        </div>
+    <?php endif; ?>
+
+    <?php if (!empty($errors)): ?>
+        <div class="alert alert-error" role="alert">
+            <h4>Please correct the following errors:</h4>
+            <ul>
+                <?php foreach ($errors as $error): ?>
+                    <li><?= e($error) ?></li>
+                <?php endforeach; ?>
+            </ul>
+        </div>
+    <?php endif; ?>
+
+    <form action="CONTACT.php#send-message" method="POST" novalidate>
+
+        <?= csrf_field() ?>
+
+        <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" maxlength="60" value="<?= e($old['name']) ?>" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" maxlength="100" value="<?= e($old['email']) ?>" required>
+        </div>
+
+        <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Enter subject" maxlength="100" value="<?= e($old['subject']) ?>" required>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write your message (10-1000 characters)" maxlength="1000" required><?= e($old['message']) ?></textarea>
+        </div>
+
+        <button type="submit">Send Message</button>
+
+
+    </form>
+
+    <h3>Why Contact Us?</h3>
+
+    <div class="list-box">
+
+        <ul>
+            <li>Get help with Student Hub Portal resources.</li>
+            <li>Report technical problems.</li>
+            <li>Share your suggestions and feedback.</li>
+            <li>Ask questions about coding practice.</li>
+            <li>Get information about upcoming events.</li>
+            <li>Get information about hackathons.</li>
+            <li>Request academic support.</li>
+        </ul>
+
+    </div>
+
+    <div class="thankyou">
+
+        <h3>Thank You!</h3>
+
+        <p>
+            Thank you for visiting Student Hub Portal.
+            Your feedback and suggestions help us improve the platform
+            and provide better resources for students.
+        </p>
+
+    </div>
+
+</div>
+</section> <footer> <p>&copy; 2026 Student Hub Portal | All Rights Reserved</p> </footer> </body> </html>
+

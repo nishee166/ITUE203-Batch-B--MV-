@@ -1,0 +1,9 @@
+student_id,student_name,department,email,password,registered_at
+25dit061,"Test Student",depstar,nishee123@gmail.com,$2y$10$G2kcLDUwaQKCt/FvaPi5WOguulo3AMPhYqriJcECgD8HP2O0xcG5q,"2026-10-02 17:47:52"
+25DIT123,Nishee,depstar,student123@gmail.com,$2y$10$eqN5sXEX8y3TbDItb/eMC.Z.j1Hviqju8hgmRgwuwrH.UC4ycJ8sy,"2026-10-02 17:50:29"
+25DIT099,nishee,as,nishee166@gmail.com,$2y$10$ohurlo5xKF3p03.OK9m1sekeJXu/oKPxk1wC6J8/nAselIwwBrmGK,"2026-10-07 11:54:28"
+25dit005,"nishee patel",cse,nish123@gmail.com,$2y$10$wB8X.oDM8Bwn/b6P058oAefOS578S1tpdeRAnEwbtSGwtN7GA18qq,"2026-10-07 11:57:11"
+25dit032,lisha,it,lisha12@gmail.com,$2y$10$ul.cyaxN.pFVHjzeIONQj.QxXIyo/DMI3KfEIHBT4FDenzvCwtMCS,"2026-10-07 12:02:05"
+25dit035,brinda,it,brinda123@gmail.com,$2y$10$NsfLTt8FM2wHlBONbSfpVuGSgq0zhUuf5GbCUcOcYT8GI6zMno.rm,"2026-10-07 12:03:58"
+25pgce031,mansi,ce,25pgce031@charusat.edu.in,$2y$10$6/VZ/bIszD.YAUBSmImS3.RePMwTuAsjwzfiu2UlIpwFDbDJ9iTF.,"2026-10-07 12:29:54"
+25DIT090,DIYA,depstar,diya123@gmail.com,$2y$10$BtWJPVKqD1eqOJSFZwWm3uF5LZ6CwmZydSHSuhlLuTOauXN0z8WKy,"2026-10-09 14:33:40"

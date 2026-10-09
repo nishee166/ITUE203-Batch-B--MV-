@@ -1,0 +1,66 @@
+[
+    {
+        "student_id": "25dit061",
+        "student_name": "Test Student",
+        "department": "depstar",
+        "email": "nishee123@gmail.com",
+        "password": "$2y$10$G2kcLDUwaQKCt\/FvaPi5WOguulo3AMPhYqriJcECgD8HP2O0xcG5q",
+        "registered_at": "2026-10-02 17:47:52"
+    },
+    {
+        "student_id": "25DIT123",
+        "student_name": "Nishee",
+        "department": "depstar",
+        "email": "student123@gmail.com",
+        "password": "$2y$10$eqN5sXEX8y3TbDItb\/eMC.Z.j1Hviqju8hgmRgwuwrH.UC4ycJ8sy",
+        "registered_at": "2026-10-02 17:50:29"
+    },
+    {
+        "student_id": "25DIT099",
+        "student_name": "nishee",
+        "department": "as",
+        "email": "nishee166@gmail.com",
+        "password": "$2y$10$ohurlo5xKF3p03.OK9m1sekeJXu\/oKPxk1wC6J8\/nAselIwwBrmGK",
+        "registered_at": "2026-10-07 11:54:28"
+    },
+    {
+        "student_id": "25dit005",
+        "student_name": "nishee patel",
+        "department": "cse",
+        "email": "nish123@gmail.com",
+        "password": "$2y$10$wB8X.oDM8Bwn\/b6P058oAefOS578S1tpdeRAnEwbtSGwtN7GA18qq",
+        "registered_at": "2026-10-07 11:57:11"
+    },
+    {
+        "student_id": "25dit032",
+        "student_name": "lisha",
+        "department": "it",
+        "email": "lisha12@gmail.com",
+        "password": "$2y$10$ul.cyaxN.pFVHjzeIONQj.QxXIyo\/DMI3KfEIHBT4FDenzvCwtMCS",
+        "registered_at": "2026-10-07 12:02:05"
+    },
+    {
+        "student_id": "25dit035",
+        "student_name": "brinda",
+        "department": "it",
+        "email": "brinda123@gmail.com",
+        "password": "$2y$10$NsfLTt8FM2wHlBONbSfpVuGSgq0zhUuf5GbCUcOcYT8GI6zMno.rm",
+        "registered_at": "2026-10-07 12:03:58"
+    },
+    {
+        "student_id": "25pgce031",
+        "student_name": "mansi",
+        "department": "ce",
+        "email": "25pgce031@charusat.edu.in",
+        "password": "$2y$10$6\/VZ\/bIszD.YAUBSmImS3.RePMwTuAsjwzfiu2UlIpwFDbDJ9iTF.",
+        "registered_at": "2026-10-07 12:29:54"
+    },
+    {
+        "student_id": "25DIT090",
+        "student_name": "DIYA",
+        "department": "depstar",
+        "email": "diya123@gmail.com",
+        "password": "$2y$10$BtWJPVKqD1eqOJSFZwWm3uF5LZ6CwmZydSHSuhlLuTOauXN0z8WKy",
+        "registered_at": "2026-10-09 14:33:40"
+    }
+]
