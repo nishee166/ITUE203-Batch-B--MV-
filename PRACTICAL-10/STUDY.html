@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Study Materials - Student Hub Portal</title>
+
+    <link rel="stylesheet" href="STUDY-TEST.css">
+</head>
+
+<body>
+
+<header>
+
+    <a href="logout.php" class="logout-btn">Log out</a>
+
+    <h1>Student Hub Portal</h1>
+
+    <p>Your One-Stop Learning Platform</p>
+
+</header>
+
+
+<nav>
+
+    <a href="home.php">Home</a>
+
+    <a href="ABOUT.html">About</a>
+
+    <a href="HACKATHON.html">Hackathons</a>
+
+    <a href="STUDY.html">Study Materials</a>
+
+    <a href="CODING.html">Coding Practice</a>
+
+    <a href="EVENTS.html">Events</a>
+
+    <a href="PORTFOLIO.html">Portfolio</a>
+
+    <a href="CONTACT.php">Contact</a>
+
+    <a href="FAQ.html">FAQ</a>
+
+    
+
+</nav>
+
+
+<section class="content">
+
+    <div class="box">
+
+        <h2>Study Materials</h2>
+
+        <p>
+            Explore subject-wise books, online courses, YouTube channels,
+            documentation and coding platforms to improve your academic
+            knowledge and programming skills.
+        </p>
+
+
+        <!-- SEARCH / FILTER / SORT -->
+
+        <div class="toolbar">
+
+            <input
+                type="text"
+                id="studySearch"
+                class="search-input"
+                placeholder="Search subjects, books, courses or platforms..."
+            >
+
+            <select id="studyCategoryFilter" class="filter-select">
+
+                <option value="All">
+                    All Categories
+                </option>
+
+                <option value="Programming">
+                    Programming
+                </option>
+
+                <option value="Web Development">
+                    Web Development
+                </option>
+
+                <option value="Core Subjects">
+                    Core Subjects
+                </option>
+
+                <option value="Advanced">
+                    Advanced
+                </option>
+
+            </select>
+
+
+            <select id="studySort" class="filter-select">
+
+                <option value="subject-asc">
+                    Subject: A-Z
+                </option>
+
+                <option value="subject-desc">
+                    Subject: Z-A
+                </option>
+
+                <option value="book-asc">
+                    Book: A-Z
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- RESULT COUNT -->
+
+        <p
+            class="result-count"
+            id="studyCount">
+        </p>
+
+
+        <!-- STUDY CARDS -->
+
+        <div
+            class="data-grid"
+            id="studyList">
+        </div>
+
+
+        <!-- PAGINATION -->
+
+        <div
+            class="pagination"
+            id="studyPagination">
+        </div>
+
+
+        
+                
+
+
+        <!-- BENEFITS -->
+
+        <h3>Benefits of Using These Resources</h3>
+
+        <ul>
+
+            <li>
+                Learn from trusted books and authors.
+            </li>
+
+            <li>
+                Prepare for university examinations.
+            </li>
+
+            <li>
+                Improve programming and problem-solving skills.
+            </li>
+
+            <li>
+                Practice coding on popular platforms.
+            </li>
+
+            <li>
+                Learn from experienced instructors.
+            </li>
+
+            <li>
+                Build projects and strengthen your portfolio.
+            </li>
+
+            <li>
+                Prepare for internships, placements, and hackathons.
+            </li>
+
+        </ul>
+
+
+        <!-- STUDY TIPS -->
+
+        <h3>Study Tips</h3>
+
+        <ul>
+
+            <li>
+                Study every day for at least one hour.
+            </li>
+
+            <li>
+                Read books before watching videos.
+            </li>
+
+            <li>
+                Practice coding regularly.
+            </li>
+
+            <li>
+                Solve previous year question papers.
+            </li>
+
+            <li>
+                Make short notes for quick revision.
+            </li>
+
+            <li>
+                Complete practicals and mini-projects.
+            </li>
+
+            <li>
+                Participate in coding contests and hackathons.
+            </li>
+
+        </ul>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <p>
+        © 2026 Student Hub Portal | CHARUSAT
+    </p>
+
+</footer>
+
+
+<script src="study.js"></script>
+
+</body>
+
+</html>

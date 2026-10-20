@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathons - Student Hub Portal</title>
+    <link rel="stylesheet" href="HACK-TEST.css">
+</head>
+
+<body>
+
+<header>
+    <a href="logout.php" class="logout-btn">LOGOUT</a>
+
+    <h1>Welcome to Student Hub Portal</h1>
+    <p>Your One-Stop Learning Platform</p>
+</header>
+
+<nav>
+    <a href="home.php">Home</a>
+    <a href="ABOUT.html">About</a>
+    <a href="HACKATHON.html">Hackathons</a>
+    <a href="STUDY.html">Study Materials</a>
+    <a href="CODING.html">Coding Practice</a>
+    <a href="EVENTS.html">Events</a>
+    <a href="PORTFOLIO.html">Portfolio</a>
+    <a href="CONTACT.php">Contact</a>
+    <a href="FAQ.html">FAQ</a>
+</nav>
+
+<section class="content">
+
+    <div class="box">
+
+        <h2>Hackathons</h2>
+
+        <p class="intro">
+            Explore exciting hackathons and innovation challenges available
+            for students. Search, filter and sort hackathons to find the
+            perfect opportunity to showcase your skills.
+        </p>
+
+        <div class="toolbar">
+
+            <input
+                type="text"
+                id="hackathonSearch"
+                class="search-input"
+                placeholder="Search hackathons by name, theme or venue..."
+            >
+
+            <select id="hackathonCategoryFilter" class="filter-select">
+                <option value="All">All Categories</option>
+                <option value="AI">AI</option>
+                <option value="Web Development">Web Development</option>
+                <option value="Cyber Security">Cyber Security</option>
+                <option value="Data Science">Data Science</option>
+                <option value="Innovation">Innovation</option>
+            </select>
+
+            <select id="hackathonSort" class="filter-select">
+                <option value="date-asc">Date: Earliest first</option>
+                <option value="date-desc">Date: Latest first</option>
+                <option value="title-asc">Name: A-Z</option>
+            </select>
+
+        </div>
+
+        <p class="result-count" id="hackathonsCount"></p>
+
+        <div class="data-grid" id="hackathonsList"></div>
+
+        <div class="pagination" id="hackathonsPagination"></div>
+
+        <h3>Why Participate in Hackathons?</h3>
+
+        <ul>
+            <li>Improve programming and problem-solving skills.</li>
+            <li>Work on real-world problems and innovative ideas.</li>
+            <li>Build impressive projects for your portfolio.</li>
+            <li>Learn teamwork and collaboration.</li>
+            <li>Connect with students, developers and industry experts.</li>
+            <li>Gain experience useful for internships and placements.</li>
+        </ul>
+
+        <h3>Hackathon Preparation Tips</h3>
+
+        <ul>
+            <li>Understand the problem statement carefully.</li>
+            <li>Choose a suitable technology stack.</li>
+            <li>Divide responsibilities among team members.</li>
+            <li>Build a simple working prototype first.</li>
+            <li>Test your project before submission.</li>
+            <li>Prepare a clear project presentation and demo.</li>
+        </ul>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Student Hub Portal | CHARUSAT</p>
+</footer>
+
+<script src="hackathon.js"></script>
+
+</body>
+</html>
