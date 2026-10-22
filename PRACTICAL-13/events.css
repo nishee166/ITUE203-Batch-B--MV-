@@ -1,0 +1,540 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --navy: #001326;
+    --dark-blue: #003366;
+    --blue: #0077cc;
+    --cyan: #00ffff;
+    --light-cyan: #00bfff;
+    --white: #ffffff;
+    --text: #d5e9f8;
+    --card: rgba(0, 30, 60, 0.92);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #001326, #002b50 55%, #001a33);
+    background-attachment: fixed;
+    color: var(--white);
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+
+.header {
+    text-align: center;
+    padding: 30px 20px;
+    background: linear-gradient(100deg, #003366, #0077cc, #003366);
+    border-bottom: 2px solid var(--cyan);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.35);
+}
+
+.header h1 {
+    font-size: clamp(25px, 4vw, 36px);
+    margin-bottom: 5px;
+    color: var(--white);
+}
+
+.header p {
+    color: #d8f0ff;
+    font-size: 15px;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 13px 6%;
+    background: rgba(0, 30, 60, 0.97);
+    border-bottom: 1px solid rgba(0, 255, 255, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 9px 13px;
+    border-radius: 7px;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--cyan);
+    background: rgba(0, 191, 255, 0.12);
+}
+
+.navbar .logout-btn {
+    position: absolute;
+    right: 6%;
+    display: inline-block;
+    color: var(--white);
+    background: #0077cc;
+    padding: 10px 20px;
+    border: 1px solid var(--cyan);
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar .logout-btn:hover {
+    background: #0056a3;
+    color: var(--cyan);
+}
+
+.container,
+main {
+    width: 88%;
+    max-width: 1200px;
+    margin: 35px auto;
+}
+
+h2 {
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+h3 {
+    color: var(--white);
+    margin-bottom: 10px;
+}
+
+p {
+    color: var(--text);
+}
+
+.section-description {
+    color: #b8cce0;
+    font-size: 14px;
+    margin-bottom: 22px;
+}
+
+
+.add-event-btn,
+a.add-event-btn,
+a[href="event_form.php"]:not(.nav-links a) {
+    display: inline-block;
+    background: linear-gradient(135deg, #0077cc, #00a6e8);
+    color: #ffffff;
+    border: 2px solid #00ffff;
+    border-radius: 9px;
+    padding: 12px 24px;
+    margin: 8px 0 18px;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 4px 14px rgba(0, 191, 255, 0.2);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.add-event-btn:hover,
+a.add-event-btn:hover,
+a[href="event_form.php"]:not(.nav-links a):hover {
+    background: #0056a3;
+    color: #00ffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 191, 255, 0.35);
+}
+
+
+.filters,
+.filter-form,
+.search-form,
+.form-container,
+.event-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    gap: 15px;
+    padding: 22px;
+    margin: 22px 0;
+    background: var(--card);
+    border: 1px solid rgba(0, 191, 255, 0.3);
+    border-radius: 14px;
+}
+
+.filters > *,
+.filter-form > *,
+.search-form > * {
+    flex: 1;
+    min-width: 170px;
+}
+
+/* Form Fields */
+label {
+    display: block;
+    margin-bottom: 6px;
+    color: var(--cyan);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgba(0, 191, 255, 0.4);
+    border-radius: 7px;
+    background: #001a33;
+    color: var(--white);
+    font: inherit;
+    outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--cyan);
+    box-shadow: 0 0 0 2px rgba(0, 255, 255, 0.12);
+}
+
+input[type="file"] {
+    padding: 9px;
+}
+
+input[type="checkbox"] {
+    width: auto;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.btn,
+button,
+input[type="submit"] {
+    display: inline-block;
+    color: #ffffff;
+    background: linear-gradient(135deg, #0077cc, #00a6e8);
+    padding: 11px 21px;
+    border: 2px solid #00ffff;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn:hover,
+button:hover,
+input[type="submit"]:hover {
+    background: #0056a3;
+    border-color: #00ffff;
+    color: #00ffff;
+    transform: translateY(-2px);
+}
+
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    align-items: stretch;
+    margin-top: 25px;
+}
+
+.event-card,
+.card {
+    min-width: 0;
+    padding: 24px;
+    background: var(--card);
+    border: 1px solid rgba(0, 191, 255, 0.3);
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease,
+                border-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.event-card:hover,
+.card:hover {
+    transform: translateY(-4px);
+    border-color: var(--cyan);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.event-card h3 {
+    font-size: 20px;
+}
+
+.event-card p {
+    margin: 7px 0;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
+
+.poster,
+.event-poster,
+.event-card img {
+    display: block;
+    width: 100%;
+    max-height: 260px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 18px;
+    border: 1px solid rgba(0, 191, 255, 0.35);
+}
+
+.no-poster {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 150px;
+    margin-bottom: 18px;
+    border: 1px dashed rgba(0, 191, 255, 0.4);
+    border-radius: 10px;
+    color: #b8cce0;
+    background: rgba(0, 20, 40, 0.65);
+}
+
+.event-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.event-actions a,
+.event-actions .edit-btn {
+    display: inline-block;
+    background: #0077cc;
+    color: #ffffff;
+    border: 2px solid #00ffff;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 191, 255, 0.2);
+    transition: 0.3s ease;
+}
+
+.event-actions a:hover,
+.event-actions .edit-btn:hover {
+    background: #004f99;
+    color: #00ffff;
+    transform: translateY(-2px);
+}
+
+.event-actions form {
+    display: inline-block;
+}
+
+.event-actions button,
+.event-actions input[type="submit"] {
+    background: #c62828;
+    color: #ffffff;
+    border: 2px solid #ff8a80;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.event-actions button:hover,
+.event-actions input[type="submit"]:hover {
+    background: #8e0000;
+    color: #ffffff;
+}
+
+
+.status,
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border: 1px solid rgba(0, 255, 255, 0.35);
+    border-radius: 20px;
+    color: var(--cyan);
+    background: rgba(0, 191, 255, 0.1);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+.message,
+.alert {
+    padding: 14px 18px;
+    margin: 18px 0;
+    border: 1px solid rgba(0, 255, 255, 0.4);
+    border-radius: 8px;
+    background: rgba(0, 43, 77, 0.8);
+    color: var(--text);
+}
+
+.error {
+    border-color: #ff7777;
+    color: #ffd5d5;
+}
+
+.empty-state {
+    padding: 35px;
+    text-align: center;
+    border: 1px dashed rgba(0, 191, 255, 0.4);
+    border-radius: 12px;
+    background: var(--card);
+}
+
+
+footer {
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 45px;
+    background: rgba(0, 19, 38, 0.8);
+    border-top: 1px solid rgba(0, 191, 255, 0.3);
+    color: #b8cce0;
+    font-size: 13px;
+}
+
+@media (max-width: 850px) {
+    .navbar {
+        position: static;
+        padding: 12px 4%;
+        justify-content: center;
+    }
+
+    .navbar .logout-btn {
+        position: static;
+    }
+
+    .nav-links {
+        width: 100%;
+        gap: 5px;
+    }
+
+    .event-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .container,
+    main {
+        width: 92%;
+        margin: 25px auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .header {
+        padding: 24px 15px;
+    }
+
+    .header h1 {
+        font-size: 25px;
+    }
+
+    .nav-links a {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    .filters,
+    .filter-form,
+    .search-form,
+    .form-container,
+    .event-form {
+        padding: 16px;
+    }
+
+    .event-card,
+    .card {
+        padding: 20px;
+    }
+
+    .event-actions a,
+    .event-actions button,
+    .event-actions input[type="submit"] {
+        padding: 9px 14px;
+    }
+}
+
+
+.event-card a[href*="event_form.php"],
+.event-card a[href*="edit"],
+.event-actions a,
+a.edit-btn,
+.edit-btn {
+    display: inline-block !important;
+    background: #0077cc !important;
+    color: #ffffff !important;
+    border: 2px solid #00ffff !important;
+    border-radius: 8px !important;
+    padding: 10px 22px !important;
+    font-size: 14px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    cursor: pointer !important;
+}
+
+.event-card a[href*="event_form.php"]:hover,
+.event-card a[href*="edit"]:hover,
+.event-actions a:hover,
+a.edit-btn:hover,
+.edit-btn:hover {
+    background: #004f99 !important;
+    color: #00ffff !important;
+}
+
+
+button[type="reset"],
+input[type="reset"],
+.reset-btn,
+a.cancel-btn,
+a[href="events.php"],
+a[href="admindash.php"] {
+    display: inline-block !important;
+    background: #0077cc !important;
+    color: #ffffff !important;
+    border: 2px solid #00ffff !important;
+    border-radius: 8px !important;
+    padding: 10px 22px !important;
+    margin: 5px !important;
+    font-size: 14px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    cursor: pointer !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transition: 0.3s ease;
+}
+
+button[type="reset"]:hover,
+input[type="reset"]:hover,
+.reset-btn:hover,
+a.cancel-btn:hover,
+a[href="events.php"]:hover,
+a[href="admindash.php"]:hover {
+    background: #004f99 !important;
+    color: #00ffff !important;
+    transform: translateY(-2px);
+}

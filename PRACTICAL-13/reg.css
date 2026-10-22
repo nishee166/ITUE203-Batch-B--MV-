@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ538KkHld8LvOGitPu43s20UGfAI98mkiDJnY8HyUERw&s=10");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #222;
+}
+
+header {
+    background: linear-gradient(135deg, #00264d, #003f7f, #0074c8);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    box-shadow: 0 5px 18px rgba(0, 51, 102, 0.35);
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+.registration-section {
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 45px 20px;
+}
+
+.registration-container {
+    background: rgba(255, 255, 255, 0.96);
+    width: 100%;
+    max-width: 500px;
+    padding: 35px;
+    border-radius: 20px;
+
+    box-shadow:
+        0 15px 35px rgba(0, 51, 102, 0.25),
+        0 5px 12px rgba(0, 85, 165, 0.15);
+
+    border: 1px solid rgba(0, 85, 165, 0.15);
+
+    animation: cardOpen 0.8s ease-out;
+}
+
+@keyframes cardOpen {
+    0% {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.registration-container:hover {
+    box-shadow:
+        0 20px 45px rgba(0, 51, 102, 0.30),
+        0 8px 18px rgba(0, 85, 165, 0.20);
+}
+
+.registration-icon {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 10px;
+    animation: iconMove 1s ease-out;
+}
+
+@keyframes iconMove {
+    0% {
+        transform: scale(0.6);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.registration-container h2 {
+    text-align: center;
+    color: #003366;
+    margin-bottom: 8px;
+    font-size: 28px;
+}
+
+.registration-subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.input-group {
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    display: block;
+    color: #003366;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #b5cce3;
+    border-radius: 9px;
+    font-size: 15px;
+    outline: none;
+    background: #f8fcff;
+    transition: 0.3s;
+}
+
+.input-group input:hover {
+    border-color: #4d9bd4;
+}
+
+.input-group input:focus {
+    border-color: #0074c8;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(0, 116, 200, 0.12);
+    transform: translateY(-1px);
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+.terms input {
+    width: 16px;
+    height: 16px;
+    accent-color: #0055a5;
+    cursor: pointer;
+}
+
+.terms label {
+    color: #555;
+    cursor: pointer;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+
+    background: linear-gradient(
+        135deg,
+        #003366,
+        #0055a5,
+        #0074c8
+    );
+
+    color: white;
+    border: none;
+    border-radius: 9px;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow: 0 5px 12px rgba(0, 51, 102, 0.25);
+
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 9px 20px rgba(0, 51, 102, 0.35);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.login-text {
+    text-align: center;
+    margin-top: 22px;
+    color: #666;
+}
+
+.login-text a {
+    color: #0055a5;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.login-text a:hover {
+    color: #003366;
+    text-decoration: underline;
+}
+
+footer {
+    background: linear-gradient(135deg, #00264d, #003f7f);
+    color: white;
+    text-align: center;
+    padding: 16px;
+    box-shadow: 0 -4px 12px rgba(0, 51, 102, 0.2);
+}
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    .registration-section {
+        padding: 30px 15px;
+    }
+
+    .registration-container {
+        padding: 25px 20px;
+    }
+
+    .registration-container h2 {
+        font-size: 24px;
+    }
+}
+
