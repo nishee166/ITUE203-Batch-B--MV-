@@ -1,0 +1,22 @@
+[
+  { "id": 1, "title": "Cognizance 2026", "category": "Technical", "date": "2026-08-20", "organizer": "DEPSTAR", "venue": "DEPSTAR Campus", "time": "9:00 AM", "status": "Open" },
+  { "id": 2, "title": "AI Workshop", "category": "Technical", "date": "2026-08-28", "organizer": "DEPSTAR AI Club", "venue": "DEPSTAR Seminar Hall", "time": "10:00 AM", "status": "Open" },
+  { "id": 3, "title": "Hackathon", "category": "Technical", "date": "2026-09-05", "organizer": "CSPIT Innovation Cell", "venue": "CSPIT Lab", "time": "9:00 AM", "status": "Registration Open" },
+  { "id": 4, "title": "Coding Competition", "category": "Technical", "date": "2026-09-12", "organizer": "CSPIT IT Department", "venue": "Computer Lab", "time": "10:00 AM", "status": "Open" },
+  { "id": 5, "title": "Cyber Security Seminar", "category": "Technical", "date": "2026-09-20", "organizer": "DEPSTAR Cyber Club", "venue": "DEPSTAR Hall", "time": "11:00 AM", "status": "Open" },
+  { "id": 6, "title": "Web Development Bootcamp", "category": "Technical", "date": "2026-09-28", "organizer": "CMPICA", "venue": "CMPICA Lab", "time": "9:30 AM", "status": "Open" },
+  { "id": 7, "title": "Robotics Workshop", "category": "Technical", "date": "2026-10-08", "organizer": "Robotics Club", "venue": "Innovation Lab", "time": "10:00 AM", "status": "Open" },
+  { "id": 8, "title": "Project Exhibition", "category": "Technical", "date": "2026-10-18", "organizer": "Innovation Cell", "venue": "DEPSTAR Exhibition Hall", "time": "10:00 AM", "status": "Coming Soon" },
+  { "id": 9, "title": "Vrund (Navratri Celebration)", "category": "Cultural", "date": "2026-10-10", "organizer": "Student Council", "venue": "University Ground", "time": "7:00 PM", "status": "Open" },
+  { "id": 10, "title": "DJ Night", "category": "Cultural", "date": "2026-10-11", "organizer": "Cultural Committee", "venue": "Open Air Theatre", "time": "8:00 PM", "status": "Open" },
+  { "id": 11, "title": "Fashion Show", "category": "Cultural", "date": "2026-10-13", "organizer": "Cultural Club", "venue": "Auditorium", "time": "6:30 PM", "status": "Open" },
+  { "id": 12, "title": "Dance Competition", "category": "Cultural", "date": "2026-10-15", "organizer": "Dance Club", "venue": "Auditorium", "time": "2:00 PM", "status": "Registration Open" },
+  { "id": 13, "title": "Open Mic & Talent Show", "category": "Cultural", "date": "2026-10-17", "organizer": "Literary Club", "venue": "Seminar Hall", "time": "3:00 PM", "status": "Open" },
+  { "id": 14, "title": "Sporral 2026", "category": "Sports", "date": "2026-11-05", "organizer": "Sports Committee", "venue": "CHARUSAT Sports Complex", "time": "8:00 AM", "status": "Open" },
+  { "id": 15, "title": "Cricket Tournament", "category": "Sports", "date": "2026-11-06", "organizer": "Sports Club", "venue": "Cricket Ground", "time": "8:30 AM", "status": "Open" },
+  { "id": 16, "title": "Basketball Championship", "category": "Sports", "date": "2026-11-07", "organizer": "Sports Club", "venue": "Basketball Court", "time": "10:00 AM", "status": "Open" },
+  { "id": 17, "title": "Badminton Tournament", "category": "Sports", "date": "2026-11-08", "organizer": "Sports Club", "venue": "Indoor Stadium", "time": "9:00 AM", "status": "Registration Open" },
+  { "id": 18, "title": "Chess Tournament", "category": "Sports", "date": "2026-11-09", "organizer": "Chess Club", "venue": "Seminar Hall", "time": "11:00 AM", "status": "Open" },
+  { "id": 19, "title": "Athletics Meet", "category": "Sports", "date": "2026-11-10", "organizer": "Sports Committee", "venue": "Athletics Track", "time": "7:30 AM", "status": "Coming Soon" },
+  { "id": 20, "title": "Food Festival", "category": "Cultural", "date": "2026-10-14", "organizer": "Student Council", "venue": "Central Lawn", "time": "5:00 PM", "status": "Open" }
+]
