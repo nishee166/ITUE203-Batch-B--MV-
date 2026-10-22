@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Events - Student Hub Portal</title>
+
+    <link rel="stylesheet" href="EVENT-TEST.css">
+</head>
+
+<body>
+
+<header>
+    <a href="LOGIN.html" class="logout-btn">Log out</a>
+
+    <h1>Student Hub Portal</h1>
+    <p>Your One-Stop Learning Platform</p>
+</header>
+
+
+<nav>
+    <a href="home.php">Home</a>
+    <a href="ABOUT.html">About</a>
+    <a href="HACKATHON.html">Hackathons</a>
+    <a href="STUDY.html">Study Materials</a>
+    <a href="CODING.html">Coding Practice</a>
+    <a href="EVENTS.html">Events</a>
+    <a href="PORTFOLIO.html">Portfolio</a>
+    <a href="CONTACT.php">Contact</a>
+    <a href="FAQ.html">FAQ</a>
+    
+</nav>
+
+
+<section class="content">
+
+    <div class="box">
+
+        <h2>College Events</h2>
+
+        <p>
+            Welcome to the Events section of the Student Hub Portal.
+            Explore technical, cultural and sports events organized
+            for students at CHARUSAT.
+        </p>
+
+
+        <div class="toolbar">
+
+            <input
+                type="text"
+                id="eventSearch"
+                class="search-input"
+                placeholder="Search events by title, organizer or venue..."
+            >
+
+            <select id="eventCategoryFilter" class="filter-select">
+
+                <option value="All">All Categories</option>
+
+                <option value="Technical">
+                    Technical
+                </option>
+
+                <option value="Cultural">
+                    Cultural
+                </option>
+
+                <option value="Sports">
+                    Sports
+                </option>
+
+            </select>
+
+
+            <select id="eventSort" class="filter-select">
+
+                <option value="date-asc">
+                    Date: Earliest first
+                </option>
+
+                <option value="date-desc">
+                    Date: Latest first
+                </option>
+
+                <option value="title-asc">
+                    Title: A-Z
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <p class="result-count" id="eventsCount"></p>
+
+
+        <div class="data-grid" id="eventsList"></div>
+
+
+        <div class="pagination" id="eventsPagination"></div>
+
+
+        <h3>Benefits of Participating</h3>
+
+        <ul>
+            <li>Improve technical and practical skills.</li>
+            <li>Gain real-world experience through competitions and workshops.</li>
+            <li>Develop teamwork and communication skills.</li>
+            <li>Showcase your talent and creativity.</li>
+            <li>Build networking opportunities with students and professionals.</li>
+            <li>Receive certificates and recognition for participation.</li>
+        </ul>
+
+
+        <h3>Registration Process</h3>
+
+        <ul>
+            <li>Select the event you want to participate in.</li>
+            <li>Check the event date, time and venue.</li>
+            <li>Complete the registration process.</li>
+            <li>Provide the required student information.</li>
+            <li>Submit your registration before the deadline.</li>
+            <li>Attend the event on the scheduled date.</li>
+        </ul>
+
+
+        <h3>Event Guidelines</h3>
+
+        <ul>
+            <li>Carry your valid college identity card.</li>
+            <li>Reach the venue before the scheduled time.</li>
+            <li>Follow the instructions provided by the organizers.</li>
+            <li>Maintain discipline and proper behavior during the event.</li>
+            <li>Do not damage college property or event equipment.</li>
+            <li>Follow all safety and security instructions.</li>
+        </ul>
+
+    </div>
+
+</section>
+
+
+<footer>
+    <p>&copy; 2026 Student Hub Portal | All Rights Reserved</p>
+</footer>
+
+
+<script type="module" src="js/app.js"></script>
+
+</body>
+
+</html>

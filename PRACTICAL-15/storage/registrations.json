@@ -1,0 +1,18 @@
+[
+    {
+        "student_id": "25DIT099",
+        "student_name": "Test Student",
+        "department": "cspit",
+        "email": "test.student2026@gmail.com",
+        "password": "$2y$10$370wiZR79.IF/pLFExHW0OQ8UTz0waZNrJS9x/6e8oWRO73e5hMry",
+        "registered_at": ""
+    },
+    {
+        "student_id": "25DIT009",
+        "student_name": "nishee",
+        "department": "cspit",
+        "email": "nishee166@gmail.com",
+        "password": "$2y$10$.SOJihMtjqNPWFyGQKaCpexI2DHYpkt7rwwJaWDs0lQcTjMaEYSLG",
+        "registered_at": ""
+    }
+]
